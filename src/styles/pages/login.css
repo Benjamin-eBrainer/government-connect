@@ -72,6 +72,17 @@
     font-weight: 500;
   }
   
+  .logoContainer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+    margin: 10px auto;
+    transition: all 0.5s ease;
+  }
+
+
   #button {
     z-index: 2;
     position: relative;
@@ -87,12 +98,24 @@
     cursor: pointer;
   }
   
+  .contactAdmin {
+    z-index: 3;
+    font-size: .7em;
+    font-weight: 500;
+    color: rgb(182, 156, 10);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+
+
   #button:hover {
     background-color: rgb(21, 71, 52);
   }
   
   .forgotLink {
-    z-index: 2;
+    z-index: 3;
     font-size: .7em;
     font-weight: 500;
     color: rgb(21, 71, 52);
@@ -100,5 +123,7 @@
     padding: 8px 15px;
     border-radius: 20px;
   }
+
+
   
   

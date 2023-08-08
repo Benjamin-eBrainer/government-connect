@@ -16,7 +16,7 @@ import Payments from "./pages/Payments.jsx";
 import Permits from "./pages/Permits.jsx";
 import PublicSpaces from "./pages/PublicSpaces.jsx";
 import ReportIncidence from "./pages/ReportIncidence.jsx";
-import Signup from "./pages/Signup.jsx";
+// import Signup from "./pages/Signup.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       <Route path="permits" element={<Permits />} />
       <Route path="public-spaces" element={<PublicSpaces />} />
       <Route path="report-incidence" element={<ReportIncidence />} />
-      <Route path="signup" element={<Signup />} />
+      {/* <Route path="signup" element={<Signup />} /> */}
     </Route>
   )
 );

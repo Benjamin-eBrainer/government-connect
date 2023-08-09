@@ -1,11 +1,14 @@
 import {} from "react";
 import ShowCards from "../components/cards";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import AddBusinessTwoToneIcon from "@mui/icons-material/AddBusinessTwoTone";
-import SummarizeIcon from "@mui/icons-material/Summarize";
-import OtherHousesIcon from "@mui/icons-material/OtherHouses";
-import PaidIcon from "@mui/icons-material/Paid";
+import { BiSolidDashboard, BiSolidReport } from "react-icons/bi";
+import { AiOutlineCar } from "react-icons/ai";
+import {
+  MdEmergencyShare,
+  MdBusinessCenter,
+  MdWorkspacesFilled,
+  MdPayments,
+  MdLogout,
+} from "react-icons/md";
 import "../styles/pages/dashboard.css";
 import Barchart from "../charts/Barchart";
 import { useSelector } from "react-redux";
@@ -23,12 +26,12 @@ const Dashboard = () => {
       {/* cards */}
       <div className="mainCards">
 
-      <ShowCards icon={<LocalHospitalIcon/> } name="Emergency Services" numbers="3000" bg='normal' percent={100}/>
-      <ShowCards icon={<LocalParkingIcon/> } name="Parking services" numbers="2000" bg='light' percent={100}/>
-      <ShowCards icon={<AddBusinessTwoToneIcon/> } name="Business Parking" numbers="300" bg='normal' percent={100}/>
-      <ShowCards icon={<SummarizeIcon/> } name="Reported Incidences" numbers="400" bg='light' percent={100}/>
-      <ShowCards icon={<OtherHousesIcon/> } name="Available Public Spaces" numbers="500" bg='normal' percent={100}/>
-      <ShowCards icon={<PaidIcon/> } name="Payments Made" numbers="1000" bg='light' percent={100}/>
+      <ShowCards icon={<MdEmergencyShare style={{fontSize: '30px'}}/> } name="Emergency Services" numbers="3000" bg='normal' percent={100}/>
+      <ShowCards icon={<AiOutlineCar style={{fontSize: '30px'}}/> } name="Parking services" numbers="2000" bg='light' percent={100}/>
+      <ShowCards icon={<MdBusinessCenter style={{fontSize: '30px'}}/> } name="Business Parking" numbers="300" bg='normal' percent={100}/>
+      <ShowCards icon={<BiSolidReport style={{fontSize: '30px'}}/> } name="Reported Incidences" numbers="400" bg='light' percent={100}/>
+      <ShowCards icon={<MdWorkspacesFilled style={{fontSize: '30px'}}/> } name="Available Public Spaces" numbers="500" bg='normal' percent={100}/>
+      <ShowCards icon={<MdPayments style={{fontSize: '30px'}}/> } name="Payments Made" numbers="1000" bg='light' percent={100}/>
 
       </div>
 

@@ -1,9 +1,7 @@
-
 import "../styles/components/tables.css"
-
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-import PaidIcon from "@mui/icons-material/Paid";
+import {MdPayments} from "react-icons/md";
 import "../styles/pages/dashboard.css";
 import Table from "../components/table";
 import Barchart from "../charts/Barchart";
@@ -19,9 +17,9 @@ const Payments = () => {
     <div>
       <div className="mainCards">
 
-      <ShowCards icon={<PaidIcon/> }name="Payments" numbers="3000" bg='light' percent={100}/>
-      <ShowCards icon={<PaidIcon/> }name="Confirmed Payments" numbers="3000" bg='normal' percent={70}/>
-      <ShowCards icon={<PaidIcon/> }name="Pending Payments" numbers="3000" bg='light' percent={30}/>
+      <ShowCards icon={<MdPayments style={{fontSize: '30px'}}/> }name="Payments" numbers="3000" bg='light' percent={100}/>
+      <ShowCards icon={<MdPayments style={{fontSize: '30px'}}/> }name="Confirmed Payments" numbers="3000" bg='normal' percent={70}/>
+      <ShowCards icon={<MdPayments style={{fontSize: '30px'}}/> }name="Pending Payments" numbers="3000" bg='light' percent={30}/>
       </div>
 
       <div className='table-containter'>

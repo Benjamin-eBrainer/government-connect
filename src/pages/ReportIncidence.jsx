@@ -1,8 +1,6 @@
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import AddBusinessTwoToneIcon from "@mui/icons-material/AddBusinessTwoTone";
+import {BiSolidReport} from 'react-icons/bi'
 import Table from "../components/table";
 import Barchart from "../charts/Barchart";
 import { IncidenceData } from "../data/Incidences";
@@ -17,9 +15,9 @@ const ReportIncidence = () => {
     <div>
       <div className="mainCards">
 
-      <ShowCards icon={<LocalHospitalIcon/> }name="Reported Cases " numbers="3000" bg='light' percent={100}/>
-      <ShowCards icon={<LocalParkingIcon/> }name="Cases solved" numbers="300" bg='normal' percent={55}/>
-      <ShowCards icon={<AddBusinessTwoToneIcon/> }name="pending" numbers="30" bg='light' percent={45}/>
+      <ShowCards icon={<BiSolidReport style={{fontSize: '30px'}}/> }name="Reported Cases " numbers="3000" bg='light' percent={100}/>
+      <ShowCards icon={<BiSolidReport style={{fontSize: '30px'}}/> }name="Cases solved" numbers="300" bg='normal' percent={55}/>
+      <ShowCards icon={<BiSolidReport style={{fontSize: '30px'}}/> }name="pending" numbers="30" bg='light' percent={45}/>
       </div>
 
       <div className='table-containter'>

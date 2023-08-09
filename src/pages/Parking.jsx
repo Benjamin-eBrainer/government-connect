@@ -1,11 +1,8 @@
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
+import {AiOutlineCar} from "react-icons/ai";
 import Table from "../components/table";
-
 import "../styles/components/tables.css";
-
 import Barchart from "../charts/Barchart";
 import { ParkData } from "../data/park";
 import { columns } from "../data/park";
@@ -19,7 +16,7 @@ const Parking = () => {
     <div>
       <div className="mainCards">
         <ShowCards
-          icon={<LocalHospitalIcon />}
+          icon={<AiOutlineCar style={{fontSize: '30px'}}/>}
           name="Parking Spaces"
           numbers="300"
 
@@ -28,10 +25,9 @@ const Parking = () => {
 
         />
         <ShowCards
-          icon={<LocalParkingIcon />}
+          icon={<AiOutlineCar style={{fontSize: '30px'}}/>}
           name="Spaces Available"
           numbers="150"
-
           bg="normal"
           percent={90}
         />

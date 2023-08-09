@@ -1,12 +1,8 @@
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import AddBusinessTwoToneIcon from "@mui/icons-material/AddBusinessTwoTone";
+import {MdWorkspacesFilled} from 'react-icons/md'
 import Table from "../components/table";
-
 import "../styles/components/tables.css";
-
 import Barchart from "../charts/Barchart";
 import { SpacesData } from "../data/Spaces";
 import { columns } from "../data/Spaces";
@@ -20,7 +16,7 @@ const PublicSpaces = () => {
     <div>
       <div className="mainCards">
         <ShowCards
-          icon={<LocalHospitalIcon />}
+          icon={<MdWorkspacesFilled style={{fontSize: '30px'}} />}
           name="Emergency Services"
           numbers="200"
 
@@ -29,7 +25,7 @@ const PublicSpaces = () => {
 
         />
         <ShowCards
-          icon={<LocalParkingIcon />}
+          icon={<MdWorkspacesFilled style={{fontSize: '30px'}} />}
           name="Emergency Services"
           numbers="300"
 
@@ -38,7 +34,7 @@ const PublicSpaces = () => {
 
         />
         <ShowCards
-          icon={<AddBusinessTwoToneIcon />}
+          icon={<MdWorkspacesFilled style={{fontSize: '30px'}} />}
           name="Emergency Services"
           numbers="30"
          bg="normal"

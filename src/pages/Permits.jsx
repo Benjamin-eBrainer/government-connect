@@ -1,15 +1,9 @@
-
 import "../styles/components/tables.css"
-
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-// import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
-// import LocalParkingIcon from '@mui/icons-material/LocalParking';
-import AddBusinessTwoToneIcon from "@mui/icons-material/AddBusinessTwoTone";
+import {MdBusinessCenter} from "react-icons/md";
 import Table from "../components/table";
 import Barchart from "../charts/Barchart";
-// import { ParkData } from "../data/park";
-// import { columns } from "../data/park";
 import { PermitData } from "../data/Permit";
 import { columns } from "../data/Permit";
 import { useSelector } from "react-redux";
@@ -22,9 +16,9 @@ const Permits = () => {
     <div>
       <div className="mainCards">
 
-      <ShowCards icon={<AddBusinessTwoToneIcon/> } name="Permit Requests" numbers="2330" bg='light' percent={100}/>
-      <ShowCards icon={<AddBusinessTwoToneIcon/> } name="Granted Permits" numbers="1570" bg='normal' percent={56}/>
-      <ShowCards icon={<AddBusinessTwoToneIcon/> } name="Pending Permits" numbers="600" bg='light' percent={44}/>
+      <ShowCards icon={<MdBusinessCenter style={{fontSize: '30px'}}/> } name="Permit Requests" numbers="2330" bg='light' percent={100}/>
+      <ShowCards icon={<MdBusinessCenter style={{fontSize: '30px'}}/> } name="Granted Permits" numbers="1570" bg='normal' percent={56}/>
+      <ShowCards icon={<MdBusinessCenter style={{fontSize: '30px'}}/> } name="Pending Permits" numbers="600" bg='light' percent={44}/>
       </div>
 
       <div className='table-containter'>

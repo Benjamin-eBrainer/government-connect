@@ -1,8 +1,6 @@
 import "../styles/pages/dashboard.css";
 import ShowCards from "../components/cards";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import AddBusinessTwoToneIcon from "@mui/icons-material/AddBusinessTwoTone";
+import {MdEmergencyShare} from "react-icons/md";
 import Table from "../components/table";
 import Barchart from "../charts/Barchart";
 import { EmergencyData } from "../data/emergency";
@@ -21,9 +19,9 @@ const Emergency = () => {
     <div>
       <div className="mainCards">
 
-      <ShowCards icon={<LocalHospitalIcon/> } name="Emergency Services" numbers="300" percent={100} bg='light'/>
-      <ShowCards icon={<LocalParkingIcon/> } name="Solved Emergencies" numbers="200" percent={80} bg='normal'/>
-      <ShowCards icon={<AddBusinessTwoToneIcon/> } name="Pending Emergency" numbers="20" percent={20} bg='light'/>
+      <ShowCards icon={<MdEmergencyShare style={{fontSize: '30px'}}/> } name="Emergency Services" numbers="300" percent={100} bg='light'/>
+      <ShowCards icon={<MdEmergencyShare style={{fontSize: '30px'}}/> } name="Solved Emergencies" numbers="200" percent={80} bg='normal'/>
+      <ShowCards icon={<MdEmergencyShare style={{fontSize: '30px'}}/> } name="Pending Emergency" numbers="20" percent={20} bg='light'/>
       </div>
 
       <div className='table-containter'>

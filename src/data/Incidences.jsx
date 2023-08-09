@@ -1,3 +1,117 @@
-const IncidenceData={
-    "data":''
-}
+const IncidenceData = [
+  {
+    id: 1,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0900Hrs",
+  },
+  {
+    id: 2,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+  {
+    id: 3,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+  {
+    id: 4,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+  {
+    id: 5,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+  {
+    id: 6,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+  {
+    id: 7,
+    Type: "sewage bust",
+    Location: "Lavingtone",
+    Contact: "+254712345678",
+    Date: "23-05-2023",
+    Time: "0800Hrs",
+  },
+];
+const header = "column-label";
+const columns = [
+  {
+    field: "id",
+    headerName: "ID",
+    width: 50,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+  {
+    field: "Type",
+    headerName: "Type",
+    width: 150,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+  {
+    field: "Location",
+    headerName: "Location",
+    width: 100,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+  {
+    field: "Contact",
+    headerName: "Contact",
+    width: 200,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+  {
+    field: "Date",
+    headerName: "Date",
+    width: 100,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+  {
+    field: "Time",
+    headerName: "Time reported",
+    width: 120,
+    flex: 1,
+    align: "center",
+    headerAlign: "center",
+    headerClassName: header,
+  },
+];
+
+export { IncidenceData, columns };
